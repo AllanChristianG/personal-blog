@@ -1,0 +1,38 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Flex:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+:root{
+    /* Color pallette*/
+    --color-primary: #fffffE;
+    --color-secondary: #6246ea;
+    --color-secondary-start-optional: #0b6ffa;
+    --color-secondary-end-optional: #0e65e3;
+    --color-background: #eff0f3;
+    --color-primary-text: #2b2c34;
+    --color-secondary-text: #c3c3c4;
+    --color-nav: #eff0f3;
+    --color-hover: #d83131;
+
+    /* Box styling */
+    --border-standard: 8px;
+    --shadow-standard: 4px 4px 8px 0 rgba(0, 0, 0, 0.05);
+    --shadow-nav: 0 0 8px 0 rgba(0, 0, 0, 0.05);
+
+    /* Font styling */
+    --font-family-inter: 'Inter', sans-serif;
+    --font-body-optional: 'Roboto', sans-serif;
+    --font-body: 'Roboto Flex', sans-serif;
+    --font-family-rubik: 'Rubik', sans-serif;
+    --font-weight-bold: 700;
+    --font-weight-semi-bold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
+}

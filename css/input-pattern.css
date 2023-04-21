@@ -1,0 +1,17 @@
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 0.5px solid #ccc;
+    box-shadow: var(--shadow-standard);
+    transition: border-color 0.3s ease-in-out;
+    width: 230px;
+    height: 38px;
+}
+
+
+input[type="text"]:focus {
+    border-color: #1a73e8;
+    outline: none;
+}

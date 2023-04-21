@@ -1,0 +1,170 @@
+@import url(./main-variables.css);
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 96px auto;
+    padding: 0 60px;
+    grid-gap: 12px;
+    max-width: 1440px;
+    font-family: var(--font-body-optional);
+}
+
+header {
+    grid-column: 1 / span 12;
+    margin-top: 40px;
+}
+
+header h1 {
+    display: block;
+    color: var(--color-primary-text);
+}
+
+.general-info {
+    display: flex;
+    align-items: center;
+    padding: 32px 0 4px 0;
+}
+
+.general-info img {
+    width: 30px;
+    margin-right: 10px;
+    border-radius: var(--border-standard);
+}
+
+.general-info p, .general-info span {
+    margin: 0;
+}
+
+.article-time-date {    
+    display: flex;
+    font-weight: var(--font-weight-light);
+}
+
+.article-time-date span {
+    font-size: 11px;
+    font-weight: var(--font-weight-light);
+    padding: 4px 8px 0 0;
+}
+
+.article-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-info p {
+    font-size: 12px;
+}
+
+main {
+    grid-column: 1 / span 12;
+}
+
+main img {
+    grid-column: 1 / span 12;
+    overflow: clip;
+    max-width: 80%;
+    margin-bottom: 48px;
+}
+
+p {
+    color: var(--color-primary-text);
+    line-height: 22px;
+    word-spacing: 4px;
+    font-weight: var(--font-weight-medium);
+}
+
+h2 {
+    color: var(--color-primary-text);
+    font-size: 32px;
+    margin: 32px 0;
+}
+
+ul {
+    margin: 24px;
+}
+
+ul li {
+    list-style: none;
+}
+
+footer {
+    grid-column: 1 / span 12;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 24px 0 24px;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog-title h1 {
+    font-family: var(--font-family-inter);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.blog-title .blog-subtitle {
+    font-size: 12px;
+    font-weight: var(--font-weight-medium);
+    color: var(--color-secondary);
+}
+
+.blog span {
+    font-size: 14px;
+    font-weight: var(--font-weight-light);
+}
+
+.back-to-home {
+    margin-top: 64px;
+}
+
+.back a {
+    text-decoration: none;
+}
+
+.back a:hover {
+    color: var(--color-secondary);
+}
+
+.footer-urls {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.ul-footer a {
+    margin: 0 10px;
+}
+
+.hr {
+    width: inherit;
+    margin: 16px 0;
+}
+
+.made-by-space {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.made-by, .made-by-love {
+    font-size: 12px;
+    font-weight: var(--font-weight-light);
+}
+
+@media screen and (max-width: 425px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
