@@ -73,6 +73,7 @@ blockquote p {
 .hero-info h1 {
     display: block;
     font-size: 52px;
+    line-height: 1.5em;
     font-weight: var(--font-weight-bold);
     margin: 0 0 20px 0;
 }
@@ -196,6 +197,7 @@ blockquote p {
 .subscribe h1 {
     font-size: 32px;
     font-weight: var(--font-weight-regular);
+    line-height: 1.5em;
     margin: 0 0 4px 0;
 }
 
@@ -221,6 +223,7 @@ blockquote p {
 }
 
 .blog-title h1 {
+    line-height: 0.5px;
     font-family: var(--font-family-inter);
     font-weight: var(--font-weight-semi-bold);
 }
@@ -272,8 +275,7 @@ blockquote p {
     margin: 16px 10px 0 0;
 }
 
-@media screen and (max-width: 425px) {
-
+@media screen and (min-width: 320px) and (max-width: 425px) {
     .nav {
         display: flex;
         flex-direction: column;
@@ -324,6 +326,11 @@ blockquote p {
         flex-wrap: wrap;
     }
 
+    .subscribe form {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .subscribe-form button {
         margin: 8px 0 0 0;
     }
@@ -338,7 +345,6 @@ blockquote p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 56px;
     }
 
     .subscribe h1 {
@@ -379,9 +385,16 @@ blockquote p {
     .made-by-space {
         display: none;
     }
+
+    .blog-title {
+        margin: initial;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .nav {
+        padding-inline: initial;
+    }
 
     .subscription-section {
         margin-top: 1400px;
@@ -415,16 +428,13 @@ blockquote p {
     }
 
     .hero-info h1 {
+        line-height: 1em;
         font-size: 32px;
     }
 
     .hero-info form {
         display: flex;
         justify-content: center;
-    }
-
-    .blog-title {
-        margin-right: 48px;
     }
 
     .coffee-btn {
